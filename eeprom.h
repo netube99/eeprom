@@ -27,9 +27,9 @@ https://github.com/netube99/eeprom
 #define A2  0
 
 //以下部分为条件编译无需修改
-#define EEPROM_ERROR            0
-#define EEPROM_DONE             1
-#define CHIP_ID                 0xA0|(A2<<3)|(A1<<2)|(A0<<1)
+#define EEPROM_SUCCESS          0
+#define EEPROM_ERROR            1
+#define CHIP_ID                 (0xA0 | (A2 << 3) | (A1 << 2) | (A0 << 1))
 
 #ifdef USE_24C01
     #define MORE_REG_BITS       0           //寄存器高位地址占用ID地址多少bit
